@@ -36,7 +36,6 @@ with open('input.txt', 'r') as file:
     visitedPositions = []
 
     while not isOutOfMap:
-        print(f"row: {row} | column: {column} | len(map): {len(map)} | len(map[column]): {len(map[column])} | direction: {direction}")
         if row > len(map) or row < 0 or column < 0 or column > len(map[column]):
             isOutOfMap = True
             break
